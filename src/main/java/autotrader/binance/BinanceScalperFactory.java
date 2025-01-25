@@ -27,10 +27,13 @@ public class BinanceScalperFactory implements ScalperFactory {
         var exchangeProvider = new BinanceExchangeProvider(spotClient);
         var historyProvider = new BinanceHistoryProvider(spotClient, properties);
         var accountProvider = new BinanceAccountProvider(spotClient);
-        var stateProvider = new BinanceTraderStateProvider(accountProvider);
 
-        // load state
-        var traderState = stateProvider.getTraderState(properties);
+        var traderStateProvider = new BinanceTraderStateProvider(accountProvider);
+        var scalperStateProvider = new BinanceScalperStateProvider(exchangeProvider);
+
+        // load states
+        var traderState = traderStateProvider.getTraderState(properties);
+        var scalperState = scalperStateProvider.getScalperState(properties);
 
         // create candle source
         var candleSource = new BinanceCandleSource(wsStreamClient, properties);
@@ -38,7 +41,7 @@ public class BinanceScalperFactory implements ScalperFactory {
         // create candle handler
         var strategy = new RiseFallStrategy(historyProvider);
         var market = new BinanceMarket(spotClient);
-        var trader = new BinanceTrader(market, traderState);
+        var trader = new BinanceTrader(market, scalperState, traderState);
         var candleHandler = new BinanceCandleHandler(strategy, trader);
 
         // create update source
