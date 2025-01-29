@@ -1,6 +1,6 @@
 package autotrader.binance.strategy;
 
-import autotrader.binance.adapter.CandleBar;
+import autotrader.binance.bar.CandleBar;
 import autotrader.binance.model.Candle;
 import autotrader.binance.provider.HistoryProvider;
 import autotrader.core.Decision;

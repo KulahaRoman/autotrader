@@ -389,14 +389,14 @@
 2025-01-29 10:14:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102627.168
 2025-01-29 10:14:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:14:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:14:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5b53cc0a
+2025-01-29 10:14:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5b53cc0a
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1026248.12
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102624.812
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1026239.68
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102623.968
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 10:15:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 10:15:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@42f47eb1
+2025-01-29 10:15:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@42f47eb1
 2025-01-29 10:15:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00009&timestamp=1738142100340&signature=d9c560b544af1e5a43aeca9ea74b21c70e20481404fc668992da1b1d536c8167
 2025-01-29 10:15:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@145c10d4
 2025-01-29 10:15:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -436,7 +436,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1133,"m
 2025-01-29 10:16:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102626.664
 2025-01-29 10:16:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 10:16:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 10:16:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@2130a4f
+2025-01-29 10:16:00 [pool-1-thread-1] DEBUG autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@2130a4f
 2025-01-29 10:16:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00009&timestamp=1738142160420&signature=80fb215af5343491c851fdf51235cbd4f2cdb7d95d3c9a821057afda5401b14a
 2025-01-29 10:16:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@f6f16ee
 2025-01-29 10:16:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -834,14 +834,14 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:20:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102604.839
 2025-01-29 10:20:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:20:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5b53cc0a
+2025-01-29 10:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5b53cc0a
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1026022.86
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102602.286
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1026003.26
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102600.326
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 10:21:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 10:21:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@42f47eb1
+2025-01-29 10:21:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@42f47eb1
 2025-01-29 10:21:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00009&timestamp=1738142460384&signature=b67e5dd24bba9714aafec8ba72a3680c7eea02383a97e052b1e4bb32deda25b7
 2025-01-29 10:21:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@145c10d4
 2025-01-29 10:21:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -881,7 +881,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1133,"m
 2025-01-29 10:22:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102602.101
 2025-01-29 10:22:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 10:22:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 10:22:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@2130a4f
+2025-01-29 10:22:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@2130a4f
 2025-01-29 10:22:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00009&timestamp=1738142520361&signature=b9c2f4437288e80fe6c8e69095b8e1f2df78de12d150109641c7e154f6e31027
 2025-01-29 10:22:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@f6f16ee
 2025-01-29 10:22:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -909,7 +909,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:23:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102602.286
 2025-01-29 10:23:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(502): true
 2025-01-29 10:23:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(502): true
-2025-01-29 10:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5757534e
+2025-01-29 10:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5757534e
 2025-01-29 10:23:44 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e92efc3, started on Wed Jan 29 10:23:44 CET 2025
 2025-01-29 10:23:44 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 10:23:44 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -1289,7 +1289,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:24:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102598.288
 2025-01-29 10:24:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:24:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1e49d221
+2025-01-29 10:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1e49d221
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1025544.27
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102554.427
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1025843.36
@@ -1300,7 +1300,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102584.336
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
 2025-01-29 10:25:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(500): true
-2025-01-29 10:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4d016ab0
+2025-01-29 10:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4d016ab0
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1025369.67
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102536.967
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(499): 1025702.39
@@ -1311,7 +1311,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102570.239
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 10:26:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 10:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@411eb978
+2025-01-29 10:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@411eb978
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1025214.43
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102521.443
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1025544.27
@@ -1322,7 +1322,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102554.427
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(502): true
 2025-01-29 10:27:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(502): true
-2025-01-29 10:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@411683e1
+2025-01-29 10:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@411683e1
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1025025.61
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102502.561
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1025369.67
@@ -1333,7 +1333,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102536.967
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
 2025-01-29 10:28:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): true
-2025-01-29 10:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@119e9938
+2025-01-29 10:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@119e9938
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1024859.75
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102485.975
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1025214.43
@@ -1344,7 +1344,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102521.443
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
 2025-01-29 10:29:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): true
-2025-01-29 10:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@570c3551
+2025-01-29 10:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@570c3551
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1024580.09
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102458.009
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1025025.61
@@ -1355,7 +1355,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102502.561
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
 2025-01-29 10:30:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): true
-2025-01-29 10:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@636d93b1
+2025-01-29 10:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@636d93b1
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1024419.79
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102441.979
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1024859.75
@@ -1366,7 +1366,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102485.975
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(506): true
 2025-01-29 10:31:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(506): true
-2025-01-29 10:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@16110db6
+2025-01-29 10:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@16110db6
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(507): 1024375.23
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(507): 102437.523
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1024580.09
@@ -1377,7 +1377,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102458.009
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(507): true
 2025-01-29 10:32:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(507): true
-2025-01-29 10:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@73231115
+2025-01-29 10:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@73231115
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(508): 1024298.15
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(508): 102429.815
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1024419.79
@@ -1388,7 +1388,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102441.979
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(508): true
 2025-01-29 10:33:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(508): true
-2025-01-29 10:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@45b3149d
+2025-01-29 10:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@45b3149d
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(509): 1024219.94
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(509): 102421.994
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(507): 1024375.23
@@ -1399,7 +1399,7 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(507): 102437.523
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(509): true
 2025-01-29 10:34:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(509): true
-2025-01-29 10:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4acce781
+2025-01-29 10:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4acce781
 2025-01-29 10:34:44 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@49b2a47d, started on Wed Jan 29 10:34:44 CET 2025
 2025-01-29 10:34:44 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 10:34:44 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -1779,14 +1779,14 @@ java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because th
 2025-01-29 10:36:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102421.994
 2025-01-29 10:36:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:36:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@348f8817
+2025-01-29 10:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@348f8817
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024230.56
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102423.056
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1024183.07
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102418.307
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 10:37:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 10:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2641c9a2
+2025-01-29 10:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2641c9a2
 2025-01-29 10:37:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00009&timestamp=1738143420347&signature=7696eb63fd0219076a6f7fd712a8500a3974945ad646f3d9df761cb9df29c737
 2025-01-29 10:37:26 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@7a2f469f
 2025-01-29 10:37:26 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -1811,42 +1811,42 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1133,"m
 2025-01-29 10:38:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102419.494
 2025-01-29 10:38:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
 2025-01-29 10:38:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(501): true
-2025-01-29 10:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@58b4d967
+2025-01-29 10:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@58b4d967
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1024438.13
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102443.813
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024230.56
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102423.056
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 10:39:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 10:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3cd6ebe9
+2025-01-29 10:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3cd6ebe9
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1024506.45
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102450.645
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1024320.45
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102432.045
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
 2025-01-29 10:40:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(503): true
-2025-01-29 10:40:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@180f6a89
+2025-01-29 10:40:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@180f6a89
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1024511.22
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102451.122
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1024438.13
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102443.813
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
 2025-01-29 10:41:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(504): true
-2025-01-29 10:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@67e9e44d
+2025-01-29 10:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@67e9e44d
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1024512.96
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102451.296
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1024506.45
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102450.645
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(505): true
 2025-01-29 10:42:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(505): true
-2025-01-29 10:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@19e87636
+2025-01-29 10:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@19e87636
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1024602.36
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102460.236
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1024511.22
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102451.122
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
 2025-01-29 10:43:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(506): true
-2025-01-29 10:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@12ea5f41
+2025-01-29 10:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@12ea5f41
 2025-01-29 10:43:43 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@49b2a47d, started on Wed Jan 29 10:43:43 CET 2025
 2025-01-29 10:43:43 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 10:43:43 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -2222,7 +2222,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1133,"m
 2025-01-29 10:44:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102454.28
 2025-01-29 10:44:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 10:44:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 10:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1b12a802
+2025-01-29 10:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1b12a802
 2025-01-29 10:44:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00006&timestamp=1738143840350&signature=7351cc6b088d54b8a0e2d9c79eab3ba43f11ecd0a405f5c0d9b234df8578048d
 2025-01-29 10:44:03 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@106f1136
 2025-01-29 10:44:03 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -2247,21 +2247,21 @@ java.lang.NullPointerException: Name is null
 2025-01-29 10:45:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102463.22
 2025-01-29 10:45:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 10:45:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 10:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7ee7ff1f
+2025-01-29 10:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7ee7ff1f
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1024889.58
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102488.958
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(499): 1024726.96
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102472.696
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
 2025-01-29 10:46:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(501): true
-2025-01-29 10:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@56e86149
+2025-01-29 10:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@56e86149
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1024925.20
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102492.52
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024828.76
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102482.876
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 10:47:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 10:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7bdc9ed8
+2025-01-29 10:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7bdc9ed8
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1024871.81
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102487.181
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1024889.58
@@ -2272,7 +2272,7 @@ java.lang.NullPointerException: Name is null
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102488.958
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
 2025-01-29 10:48:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): true
-2025-01-29 10:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@51feb0c8
+2025-01-29 10:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@51feb0c8
 2025-01-29 10:48:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738144080358&signature=295e7bea148000b1436b2a0cdb56b5582eff35a7a238b7ab274cd48211b3c581
 2025-01-29 10:48:01 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@21cb4799
 2025-01-29 10:48:01 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -2286,7 +2286,7 @@ java.lang.NullPointerException: Name is null
 2025-01-29 10:49:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102492.52
 2025-01-29 10:49:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
 2025-01-29 10:49:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): true
-2025-01-29 10:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5d76b9b
+2025-01-29 10:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5d76b9b
 2025-01-29 10:49:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738144140343&signature=bf50a12e09492471690c3dd1219c9fa723706df21659d92dc13de34a1f7a0584
 2025-01-29 10:49:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@2f33eab4
 2025-01-29 10:49:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -2299,7 +2299,7 @@ java.lang.NullPointerException: Name is null
 2025-01-29 10:50:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102487.181
 2025-01-29 10:50:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(505): true
 2025-01-29 10:50:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(505): true
-2025-01-29 10:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1ae20fa7
+2025-01-29 10:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1ae20fa7
 2025-01-29 10:50:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00006&timestamp=1738144200358&signature=0b6b8c7072fea99cf10036e5a7c88b8e385cce4947bbe71cebb00c89a19fceed
 2025-01-29 10:50:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@4ae014e2
 2025-01-29 10:50:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -2324,14 +2324,14 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 10:51:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102484.348
 2025-01-29 10:51:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
 2025-01-29 10:51:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(506): true
-2025-01-29 10:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3e3e94c3
+2025-01-29 10:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3e3e94c3
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(507): 1024893.97
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(507): 102489.397
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1024887.20
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102488.72
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(507): true
 2025-01-29 10:52:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(507): true
-2025-01-29 10:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2b9cfe31
+2025-01-29 10:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2b9cfe31
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(508): 1024801.81
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(508): 102480.181
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1024909.53
@@ -2342,7 +2342,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102490.953
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(508): true
 2025-01-29 10:53:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(508): true
-2025-01-29 10:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1529c36a
+2025-01-29 10:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1529c36a
 2025-01-29 10:53:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738144380350&signature=e6fcd84064d65a08b40c44d2824d9d86a4c797e6d12cee4d2b02c390597d055c
 2025-01-29 10:53:02 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@67b6fc03
 2025-01-29 10:53:02 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -2737,7 +2737,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:54:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102490.827
 2025-01-29 10:54:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:54:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@348f8817
+2025-01-29 10:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@348f8817
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024588.38
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102458.838
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1024816.11
@@ -2748,7 +2748,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102481.611
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
 2025-01-29 10:55:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(500): true
-2025-01-29 10:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@2641c9a2
+2025-01-29 10:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@2641c9a2
 2025-01-29 10:55:49 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@49b2a47d, started on Wed Jan 29 10:55:49 CET 2025
 2025-01-29 10:55:49 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 10:55:49 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -3128,7 +3128,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:56:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(497): 102470.841
 2025-01-29 10:56:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 10:56:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 10:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@7acd3a0e
+2025-01-29 10:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@7acd3a0e
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024303.53
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102430.353
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(498): 1024588.37
@@ -3139,7 +3139,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(498): 102458.837
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
 2025-01-29 10:57:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(500): true
-2025-01-29 10:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@11e8cf21
+2025-01-29 10:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@11e8cf21
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1024192.70
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102419.27
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(499): 1024452.21
@@ -3150,7 +3150,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(499): 102445.221
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 10:58:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 10:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4a2c1564
+2025-01-29 10:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4a2c1564
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1024061.19
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102406.119
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(500): 1024303.53
@@ -3161,7 +3161,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(500): 102430.353
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(502): true
 2025-01-29 10:59:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(502): true
-2025-01-29 10:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@544ad94d
+2025-01-29 10:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@544ad94d
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1023933.55
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102393.355
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(501): 1024192.70
@@ -3172,7 +3172,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(501): 102419.27
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
 2025-01-29 11:00:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): true
-2025-01-29 11:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@47448480
+2025-01-29 11:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@47448480
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1023771.25
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102377.125
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(502): 1024061.19
@@ -3183,7 +3183,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(502): 102406.119
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
 2025-01-29 11:01:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): true
-2025-01-29 11:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1002da8e
+2025-01-29 11:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1002da8e
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1023662.25
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102366.225
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(503): 1023933.55
@@ -3194,7 +3194,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(503): 102393.355
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
 2025-01-29 11:02:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): true
-2025-01-29 11:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@3aaf7adf
+2025-01-29 11:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@3aaf7adf
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1023554.19
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102355.419
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(504): 1023771.25
@@ -3205,7 +3205,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(504): 102377.125
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(506): true
 2025-01-29 11:03:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(506): true
-2025-01-29 11:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@382d5c76
+2025-01-29 11:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@382d5c76
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(507): 1023365.63
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(507): 102336.563
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(505): 1023662.25
@@ -3216,7 +3216,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(505): 102366.225
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(507): true
 2025-01-29 11:04:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(507): true
-2025-01-29 11:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5b2eaf77
+2025-01-29 11:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5b2eaf77
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(508): 1023227.35
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(508): 102322.735
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(506): 1023554.19
@@ -3227,7 +3227,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(506): 102355.419
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(508): true
 2025-01-29 11:05:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(508): true
-2025-01-29 11:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5d7ec836
+2025-01-29 11:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5d7ec836
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(509): 1023182.99
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(509): 102318.299
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(507): 1023365.63
@@ -3238,7 +3238,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(507): 102336.563
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(509): true
 2025-01-29 11:06:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(509): true
-2025-01-29 11:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1cc638c4
+2025-01-29 11:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1cc638c4
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(510): 1023194.91
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(510): 102319.491
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 10(508): 1023227.35
@@ -3249,7 +3249,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 10(508): 102322.735
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(510): true
 2025-01-29 11:07:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(510): true
-2025-01-29 11:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4eda09c6
+2025-01-29 11:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4eda09c6
 2025-01-29 11:08:40 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b0b0854, started on Wed Jan 29 11:08:40 CET 2025
 2025-01-29 11:08:40 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 11:08:40 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -3625,7 +3625,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:09:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(497): 102366.62
 2025-01-29 11:09:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 11:09:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 11:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@33e8882e
+2025-01-29 11:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@33e8882e
 2025-01-29 11:09:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00009&timestamp=1738145340394&signature=4c1c188b310e8893662d467fda36ec021a63c100d09383dd7eb9d0b6bf032a75
 2025-01-29 11:09:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@7fe4ecf2
 2025-01-29 11:09:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -3650,28 +3650,28 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 11:10:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(498): 102389.615
 2025-01-29 11:10:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 11:10:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 11:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2bb8761d
+2025-01-29 11:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2bb8761d
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 204916.19
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102458.095
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(499): 204827.39
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(499): 102413.695
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
 2025-01-29 11:11:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(501): true
-2025-01-29 11:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1a1907cb
+2025-01-29 11:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1a1907cb
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 204932.18
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102466.09
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 204879.4
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102439.7
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 11:12:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 11:12:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6eb8220b
+2025-01-29 11:12:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6eb8220b
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 204943.85
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 102471.925
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 204916.19
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102458.095
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
 2025-01-29 11:13:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(503): true
-2025-01-29 11:13:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@68173e69
+2025-01-29 11:13:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@68173e69
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 204919.73
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 102459.865
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 204932.18
@@ -3682,7 +3682,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(502): 409811.58
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(502): 102452.895
 2025-01-29 11:14:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): false
-2025-01-29 11:14:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@77b5e8
+2025-01-29 11:14:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@77b5e8
 2025-01-29 11:14:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=STOP_LOSS&quantity=0.00009&stopPrice=102441.37&timestamp=1738145640389&signature=a532cda4e628b205e1d5e019bbf97856bd6fd48047f944065948672129a333c5
 2025-01-29 11:14:02 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Stop price would trigger immediately."}
@@ -3713,7 +3713,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:15:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(503): 102465.01
 2025-01-29 11:15:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
 2025-01-29 11:15:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): true
-2025-01-29 11:15:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@14b7eaf3
+2025-01-29 11:15:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@14b7eaf3
 2025-01-29 11:15:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00009&timestamp=1738145700415&signature=e9a2f6391f4d5f72d0588e1079dedebb9fdca79235864d15ad8efaa9e1449601
 2025-01-29 11:15:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Account has insufficient balance for requested action."}
@@ -3744,7 +3744,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:16:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(504): 102462.9775
 2025-01-29 11:16:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(506): true
 2025-01-29 11:16:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(506): true
-2025-01-29 11:16:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@148ef109
+2025-01-29 11:16:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@148ef109
 2025-01-29 11:16:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00009&timestamp=1738145760364&signature=388d49d7bc52d5568a35d7b034a3e8c736ceeb534402657de62f4117e40dccf3
 2025-01-29 11:16:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Account has insufficient balance for requested action."}
@@ -4139,7 +4139,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:18:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(497): 102395.19
 2025-01-29 11:18:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 11:18:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 11:18:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1e49d221
+2025-01-29 11:18:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1e49d221
 2025-01-29 11:18:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00006&timestamp=1738145880372&signature=013bfd76477b21bcdbbe6542d3af0d22994b8518af0bae72eea7b92944c0511f
 2025-01-29 11:18:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@4fd6bdc4
 2025-01-29 11:18:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@ad43a5a
@@ -4149,42 +4149,42 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:19:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(498): 102431.29
 2025-01-29 11:19:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 11:19:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 11:19:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@54ae2fd3
+2025-01-29 11:19:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@54ae2fd3
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205125.92
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102562.96
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(499): 204970.56
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(499): 102485.28
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
 2025-01-29 11:20:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(501): true
-2025-01-29 11:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3fee37ea
+2025-01-29 11:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3fee37ea
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205189.05
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102594.525
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205044.96
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102522.48
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 11:21:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 11:21:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@62a4cb76
+2025-01-29 11:21:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@62a4cb76
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 205303.18
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 102651.59
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205125.92
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102562.96
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
 2025-01-29 11:22:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(503): true
-2025-01-29 11:22:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4f79c84c
+2025-01-29 11:22:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4f79c84c
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 205370.42
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 102685.21
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205189.05
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102594.525
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
 2025-01-29 11:23:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(504): true
-2025-01-29 11:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6a8cb6c7
+2025-01-29 11:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6a8cb6c7
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(505): 205360.48
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(505): 102680.24
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 205303.18
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 102651.59
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(505): true
 2025-01-29 11:24:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(505): true
-2025-01-29 11:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@24139d1b
+2025-01-29 11:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@24139d1b
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(506): 205320.42
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(506): 102660.21
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 205370.42
@@ -4195,7 +4195,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(504): 410559.47
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(504): 102639.8675
 2025-01-29 11:25:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(506): false
-2025-01-29 11:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@60281d94
+2025-01-29 11:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@60281d94
 2025-01-29 11:25:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=STOP_LOSS&quantity=0.00006&stopPrice=102588.36&timestamp=1738146300385&signature=dd8f558c0370884e84f19ebf747c0212e067f25760932f256193bb02e71c5d6a
 2025-01-29 11:25:01 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Stop price would trigger immediately."}
@@ -4225,7 +4225,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:26:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(505): 410663.66
 2025-01-29 11:26:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(505): 102665.915
 2025-01-29 11:26:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(507): false
-2025-01-29 11:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@30edd53e
+2025-01-29 11:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@30edd53e
 2025-01-29 11:26:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=STOP_LOSS&quantity=0.00006&stopPrice=102603.88&timestamp=1738146360382&signature=b724a52c4129c3af709090a361ba846b4954ca4bfea7b5729e09481e9e7c93bd
 2025-01-29 11:26:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Stop price would trigger immediately."}
@@ -4256,7 +4256,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:27:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(506): 102672.71
 2025-01-29 11:27:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(508): true
 2025-01-29 11:27:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(508): true
-2025-01-29 11:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4a08abd9
+2025-01-29 11:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4a08abd9
 2025-01-29 11:27:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738146420384&signature=3b3f6581ec50f7e4d263ef1da20628a4762607b585834c726c98003278ce26f7
 2025-01-29 11:27:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@39fcd6c2
 2025-01-29 11:27:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -4271,7 +4271,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:28:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(507): 102670.225
 2025-01-29 11:28:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(509): true
 2025-01-29 11:28:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(509): true
-2025-01-29 11:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4bfe8502
+2025-01-29 11:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4bfe8502
 2025-01-29 11:28:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738146480395&signature=2378b0a81c79ac1d2b08ee798741f8049b030bcb2f34d19d876635c2f761d623
 2025-01-29 11:28:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@4156218f
 2025-01-29 11:28:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "SELL" order was accepted.
@@ -4286,7 +4286,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:29:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(508): 102657.545
 2025-01-29 11:29:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(510): true
 2025-01-29 11:29:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(510): true
-2025-01-29 11:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@15e4ed66
+2025-01-29 11:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@15e4ed66
 2025-01-29 11:29:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738146540372&signature=cb34a8ee4ae8dc92d2a5ef0078574fb9d6c00a32b8d1ce3208b796c507ae5c92
 2025-01-29 11:29:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Account has insufficient balance for requested action."}
@@ -4317,7 +4317,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:30:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(509): 102637.8825
 2025-01-29 11:30:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(511): true
 2025-01-29 11:30:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(511): true
-2025-01-29 11:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@512697c6
+2025-01-29 11:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@512697c6
 2025-01-29 11:30:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738146600393&signature=c4bdd9efd2ecfb8aeed9a19218a93d37730cdc84ad37f53f80713b0d0440a76a
 2025-01-29 11:30:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Account has insufficient balance for requested action."}
@@ -4348,7 +4348,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:31:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(510): 102618.0325
 2025-01-29 11:31:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(512): true
 2025-01-29 11:31:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(512): true
-2025-01-29 11:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5cf29107
+2025-01-29 11:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5cf29107
 2025-01-29 11:31:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00006&timestamp=1738146660372&signature=40b6a3c35bf96f3094f5672d09d29edbd82ffb34da9f80d809fd7fea9691ef4e
 2025-01-29 11:31:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Account has insufficient balance for requested action."}
@@ -4374,21 +4374,21 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:32:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(511): 102560.415
 2025-01-29 11:32:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(513): true
 2025-01-29 11:32:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(513): true
-2025-01-29 11:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1a9eb996
+2025-01-29 11:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1a9eb996
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(514): 205255.99
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(514): 102627.995
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(512): 205143.05
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(512): 102571.525
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(514): true
 2025-01-29 11:33:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(514): true
-2025-01-29 11:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@ab270c6
+2025-01-29 11:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@ab270c6
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(515): 205273.18
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(515): 102636.59
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(513): 205200.09
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(513): 102600.045
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(515): true
 2025-01-29 11:34:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(515): true
-2025-01-29 11:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4280b23e
+2025-01-29 11:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4280b23e
 2025-01-29 11:34:08 [main] TRACE o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3ba9ad43, started on Wed Jan 29 11:34:08 CET 2025
 2025-01-29 11:34:08 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 11:34:08 [main] TRACE o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -4764,7 +4764,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:35:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(497): 102627.995
 2025-01-29 11:35:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 11:35:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 11:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1e49d221
+2025-01-29 11:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1e49d221
 2025-01-29 11:35:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00008&timestamp=1738146900386&signature=cce0d8a2f7b2c19a84b7a38825f3fd4fb9ab3f22eda581fbe8bdb897a6513c87
 2025-01-29 11:35:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@4fd6bdc4
 2025-01-29 11:35:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -4789,21 +4789,21 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:36:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(498): 102636.59
 2025-01-29 11:36:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 11:36:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 11:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@62a4cb76
+2025-01-29 11:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@62a4cb76
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205406.98
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102703.49
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(499): 205271.45
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(499): 102635.725
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
 2025-01-29 11:37:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(501): true
-2025-01-29 11:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4f79c84c
+2025-01-29 11:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4f79c84c
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205405.67
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102702.835
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205330.32
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102665.16
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 11:38:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 11:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6a8cb6c7
+2025-01-29 11:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6a8cb6c7
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 205349.33
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 102674.665
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205406.98
@@ -4814,7 +4814,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(501): 410678.43
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(501): 102669.6075
 2025-01-29 11:39:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): false
-2025-01-29 11:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@24139d1b
+2025-01-29 11:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@24139d1b
 2025-01-29 11:39:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=STOP_LOSS&quantity=0.00008&stopPrice=102661.11&timestamp=1738147140382&signature=7f0072153e62f10b3a0cded5bf5b1f611f44f63d8b444b4e955d4adc6ea4d0c4
 2025-01-29 11:39:02 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"msg":"Stop price would trigger immediately."}
@@ -5214,7 +5214,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:41:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(497): 102689.0775
 2025-01-29 11:41:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 11:41:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 11:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@7793b80
+2025-01-29 11:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@7793b80
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205206.03
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102603.015
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(498): 205332.34
@@ -5226,7 +5226,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(498): 102684.5025
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
 2025-01-29 11:42:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(500): true
-2025-01-29 11:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@755f2fbf
+2025-01-29 11:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@755f2fbf
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205123.12
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102561.56
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(499): 205321.61
@@ -5238,7 +5238,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(499): 102667.735
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 11:43:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 11:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@639f958
+2025-01-29 11:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@639f958
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205105.74
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102552.87
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205206.03
@@ -5250,7 +5250,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(500): 102634.5925
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(502): true
 2025-01-29 11:44:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(502): true
-2025-01-29 11:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@51e2365
+2025-01-29 11:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@51e2365
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 205046.42
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 102523.21
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205123.12
@@ -5262,7 +5262,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(501): 102611.1825
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
 2025-01-29 11:45:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): true
-2025-01-29 11:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@4b75ad7d
+2025-01-29 11:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@4b75ad7d
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 205058.15
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 102529.075
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205105.74
@@ -5274,7 +5274,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(502): 102577.9425
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
 2025-01-29 11:46:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): true
-2025-01-29 11:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@475b517b
+2025-01-29 11:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@475b517b
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(505): 205043.06
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(505): 102521.53
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 205046.42
@@ -5286,14 +5286,14 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(503): 102542.385
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
 2025-01-29 11:47:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): true
-2025-01-29 11:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@e6193f1
+2025-01-29 11:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@e6193f1
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(506): 205060.54
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(506): 102530.27
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 205058.15
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 102529.075
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
 2025-01-29 11:48:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(506): true
-2025-01-29 11:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7a108c53
+2025-01-29 11:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7a108c53
 2025-01-29 11:48:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00009&timestamp=1738147680398&signature=5d441ac17cac29122f066d8723a01512dbe1412f28377dba107e112f2ba9d531
 2025-01-29 11:48:01 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@38e3e57d
 2025-01-29 11:48:01 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -5309,14 +5309,14 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:49:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(505): 102521.53
 2025-01-29 11:49:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(507): true
 2025-01-29 11:49:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(507): true
-2025-01-29 11:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5944d138
+2025-01-29 11:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5944d138
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(508): 205104.40
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(508): 102552.20
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(506): 205060.54
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(506): 102530.27
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(508): true
 2025-01-29 11:50:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(508): true
-2025-01-29 11:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@b4bd21d
+2025-01-29 11:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@b4bd21d
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(509): 205113.23
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(509): 102556.615
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(507): 205128.39
@@ -5327,7 +5327,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(507): 410171.45
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(507): 102542.8625
 2025-01-29 11:51:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(509): false
-2025-01-29 11:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@1960e3a
+2025-01-29 11:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@1960e3a
 2025-01-29 11:51:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - DELETE https://api3.binance.com/api/v3/order?symbol=BTCUSDT&orderId=36181248218&timestamp=1738147860394&signature=9977fec43a69fa4e4a850acf4b75e084b8848551192c16366d03901019ba3847
 2025-01-29 11:51:02 [OkHttp https://stream.binance.com:9443/...] ERROR c.b.c.c.utils.WebSocketConnection - [Connection 2] Failure
 java.lang.IllegalArgumentException: No enum constant autotrader.binance.model.OrderStatus.CANCELED
@@ -5386,7 +5386,7 @@ java.lang.IllegalArgumentException: No enum constant autotrader.binance.model.Or
 2025-01-29 11:52:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(508): 102552.20
 2025-01-29 11:52:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(510): true
 2025-01-29 11:52:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(510): true
-2025-01-29 11:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7489cbf3
+2025-01-29 11:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7489cbf3
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(511): 205065.45
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(511): 102532.725
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(509): 205113.23
@@ -5398,7 +5398,7 @@ java.lang.IllegalArgumentException: No enum constant autotrader.binance.model.Or
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(509): 102560.405
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(511): true
 2025-01-29 11:53:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(511): true
-2025-01-29 11:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@55ba5ad9
+2025-01-29 11:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@55ba5ad9
 2025-01-29 11:53:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.00000977&timestamp=1738147980456&signature=3c8819cb507efb83bccd99abf242db9ae3feeacd9500c05c5713c27896e855f5
 2025-01-29 11:53:00 [pool-1-thread-1] ERROR a.core.BaseUpdatableScalper - Failed to handle candle
 com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"msg":"Filter failure: LOT_SIZE"}
@@ -5810,7 +5810,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:54:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(497): 102554.225
 2025-01-29 11:54:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
 2025-01-29 11:54:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(499): true
-2025-01-29 11:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@58e86be5
+2025-01-29 11:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@58e86be5
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205013.72
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102506.86
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(498): 205065.45
@@ -5822,7 +5822,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(498): 102544.67
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
 2025-01-29 11:55:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(500): true
-2025-01-29 11:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5e3399f2
+2025-01-29 11:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5e3399f2
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 205026.17
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102513.085
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(499): 205039.89
@@ -5834,14 +5834,14 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(499): 102538.0975
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
 2025-01-29 11:56:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): true
-2025-01-29 11:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@634c3906
+2025-01-29 11:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@634c3906
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 205075.90
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102537.95
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 205013.72
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(500): 102506.86
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
 2025-01-29 11:57:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(502): true
-2025-01-29 11:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@310223f9
+2025-01-29 11:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@310223f9
 2025-01-29 11:57:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00006&timestamp=1738148220412&signature=1f61a72e2297988fa03786d04ef16855e6e0f851ac79090b87f6643d4bd0521c
 2025-01-29 11:57:02 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@6c4aad67
 2025-01-29 11:57:02 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -5851,7 +5851,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getBuy
 2025-01-29 11:58:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(501): 102513.085
 2025-01-29 11:58:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
 2025-01-29 11:58:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(503): true
-2025-01-29 11:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5366f3b0
+2025-01-29 11:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5366f3b0
 2025-01-29 11:58:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=STOP_LOSS&quantity=0.00006&stopPrice=102556.33&timestamp=1738148280524&signature=5f5b5184f64dd2981b03e5b264d9b0f62c47a16974cb701cd44840e176753d84
 2025-01-29 11:58:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@212fb491
 2025-01-29 11:58:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "STOP LOSS" order was accepted.
@@ -5871,7 +5871,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getSel
 2025-01-29 11:59:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 102537.95
 2025-01-29 11:59:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
 2025-01-29 11:59:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(504): true
-2025-01-29 11:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7f01f580
+2025-01-29 11:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7f01f580
 2025-01-29 11:59:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.00006&timestamp=1738148340393&signature=68371303a2507f96735a63d94a9b0adff61c31fe3b87ca473288bb9ae8a299d9
 2025-01-29 11:59:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@6d7c4aee
 2025-01-29 11:59:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
@@ -5889,7 +5889,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getSel
 2025-01-29 12:00:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(503): 410136.63
 2025-01-29 12:00:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(503): 102534.1575
 2025-01-29 12:00:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): false
-2025-01-29 12:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@1b1e62a3
+2025-01-29 12:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@1b1e62a3
 2025-01-29 12:00:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - DELETE https://api3.binance.com/api/v3/order?symbol=BTCUSDT&orderId=36181464184&timestamp=1738148400408&signature=09139c0efe58b6256fe2094217c71a166d43ee0c3272306c1f6ead2c059ffcab
 2025-01-29 12:00:00 [pool-1-thread-1] INFO  c.b.c.client.utils.RequestHandler - POST https://api3.binance.com/api/v3/order?symbol=BTCUSDT&side=SELL&type=STOP_LOSS&quantity=0.00006&stopPrice=102543.38&timestamp=1738148400723&signature=72bd91e3f21ea7d8b97b299cc5dcc4109a0d32e2b1ad542850732b13621347bd
 2025-01-29 12:00:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@70ec39b3
@@ -5917,7 +5917,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getSel
 2025-01-29 12:01:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(504): 102543.6425
 2025-01-29 12:01:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(506): true
 2025-01-29 12:01:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(506): true
-2025-01-29 12:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1e58d1b6
+2025-01-29 12:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1e58d1b6
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(507): 204956.48
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(507): 102478.24
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(505): 205084.95
@@ -5929,7 +5929,7 @@ java.lang.NullPointerException: Cannot invoke "autotrader.binance.Context.getSel
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(505): 102548.8525
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(507): true
 2025-01-29 12:02:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(507): true
-2025-01-29 12:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@76bbb3a4
+2025-01-29 12:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@76bbb3a4
 2025-01-29 12:02:11 [main] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c130745
 2025-01-29 12:02:11 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
 2025-01-29 12:02:11 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [D:\Development\Java\Projects\autotrader\target\classes\autotrader\binance\BinanceScalperFactory.class]
@@ -6618,7 +6618,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(497): 101915.36
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 16:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@576604e5
+2025-01-29 16:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@576604e5
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Buy order arguments:
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - free=8.699785913333333
@@ -6668,7 +6668,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(497): 102011.63
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(499): true
-2025-01-29 16:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@58419836
+2025-01-29 16:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@58419836
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Buy order arguments:
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - free=8.693673106666667
@@ -6682,7 +6682,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(498): 101980.62
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(500): true
-2025-01-29 16:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@381360b1
+2025-01-29 16:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@381360b1
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Stop-loss order arguments:
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - freeAmount=9.29E-6
@@ -6722,7 +6722,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:36:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(499): 408062.82
 2025-01-29 16:36:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(499): 102015.705
 2025-01-29 16:36:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(501): false
-2025-01-29 16:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@7cc489bb
+2025-01-29 16:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@7cc489bb
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 203961.91
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(502): 101980.955
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(500): 204023.04
@@ -6733,7 +6733,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(500): 407984.28
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(500): 101996.07
 2025-01-29 16:37:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(502): false
-2025-01-29 16:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@6c9a81a1
+2025-01-29 16:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@6c9a81a1
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 203882.57
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(503): 101941.285
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(501): 204023.02
@@ -6745,7 +6745,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(501): 102015.645
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
 2025-01-29 16:38:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(503): true
-2025-01-29 16:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@702b7155
+2025-01-29 16:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@702b7155
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 203830.21
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 101915.105
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(502): 203961.91
@@ -6757,7 +6757,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(502): 101996.2375
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
 2025-01-29 16:39:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(504): true
-2025-01-29 16:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@67c3a31
+2025-01-29 16:39:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@67c3a31
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(505): 203792.77
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(505): 101896.385
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(503): 203882.57
@@ -6769,14 +6769,14 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(503): 101976.3975
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
 2025-01-29 16:40:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(505): true
-2025-01-29 16:40:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5e2de214
+2025-01-29 16:40:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5e2de214
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(506): 203864.17
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(506): 101932.085
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(504): 203830.21
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(504): 101915.105
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(506): true
-2025-01-29 16:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6682e7f9
+2025-01-29 16:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6682e7f9
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Stop-loss order arguments:
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - freeAmount=9.29E-6
@@ -6812,7 +6812,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(505): 101896.385
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(507): true
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(507): true
-2025-01-29 16:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2ac29597
+2025-01-29 16:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2ac29597
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Stop-loss order arguments:
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - freeAmount=9.29E-6
@@ -6848,7 +6848,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(506): 101932.085
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(508): true
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldEnter(508): true
-2025-01-29 16:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6a026e26
+2025-01-29 16:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6a026e26
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Stop-loss order arguments:
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - symbol=BTCUSDT
 2025-01-29 16:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - freeAmount=9.29E-6
@@ -6888,7 +6888,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:44:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 4(507): 407723.66
 2025-01-29 16:44:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(507): 101930.915
 2025-01-29 16:44:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(509): false
-2025-01-29 16:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@5d4e12a1
+2025-01-29 16:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@5d4e12a1
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(510): 203735.66
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(510): 101867.83
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(508): 203919.31
@@ -6900,7 +6900,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(508): 101945.87
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(510): true
 2025-01-29 16:45:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(510): true
-2025-01-29 16:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@31909ca6
+2025-01-29 16:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@31909ca6
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(511): 203696.35
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 2(511): 101848.175
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE o.t.c.i.h.RunningTotalIndicator - RunningTotalIndicator barCount: 2(509): 203829.37
@@ -6912,7 +6912,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE o.ta4j.core.indicators.SMAIndicator - SMAIndicator barCount: 4(509): 101940.065
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(511): true
 2025-01-29 16:46:00 [pool-1-thread-1] TRACE org.ta4j.core.BaseStrategy - >>> BaseStrategy#shouldExit(511): true
-2025-01-29 16:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@481ab7ec
+2025-01-29 16:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@481ab7ec
 2025-01-29 16:46:24 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/exchangeInfo
 2025-01-29 16:46:44 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/account?signature=a1c231c8829ecf34ede56b3c86451b990ec0be1c6664c2d9bbe2271701cf986d&timestamp=1738165604709
 2025-01-29 16:46:45 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/exchangeInfo
@@ -6926,9 +6926,9 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:47:07 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 2] Connected to Server
 2025-01-29 16:47:08 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 3] Connected to Server
 2025-01-29 16:48:04 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 16:48:04 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@7f5ed20c
+2025-01-29 16:48:04 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@7f5ed20c
 2025-01-29 16:49:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
-2025-01-29 16:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@47803a9
+2025-01-29 16:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@47803a9
 2025-01-29 16:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 16:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
 2025-01-29 16:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxQty=9000.0
@@ -6941,7 +6941,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 16:49:00 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@6a444d27
 2025-01-29 16:49:00 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@2f46ce0b
 2025-01-29 16:50:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 16:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@f1a2945
+2025-01-29 16:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@f1a2945
 2025-01-29 16:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 16:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 16:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -6980,7 +6980,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 16:51:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 16:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2181c4a9
+2025-01-29 16:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2181c4a9
 2025-01-29 16:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 16:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 16:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7019,7 +7019,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 16:52:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 16:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@695c24a6
+2025-01-29 16:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@695c24a6
 2025-01-29 16:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 16:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 16:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7058,7 +7058,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 16:53:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
-2025-01-29 16:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@284ae9b8
+2025-01-29 16:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@284ae9b8
 2025-01-29 16:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 16:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 16:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7096,16 +7096,16 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1848)
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-2025-01-29 16:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@6d4c759d
-2025-01-29 16:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@648f5bb8
+2025-01-29 16:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@6d4c759d
+2025-01-29 16:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@648f5bb8
 2025-01-29 16:56:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(507): true
-2025-01-29 16:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1bf779b8
+2025-01-29 16:56:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1bf779b8
 2025-01-29 16:57:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(508): true
-2025-01-29 16:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1663279a
+2025-01-29 16:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1663279a
 2025-01-29 16:58:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(509): true
-2025-01-29 16:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@188d5856
+2025-01-29 16:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@188d5856
 2025-01-29 16:59:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(510): true
-2025-01-29 16:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6c19264
+2025-01-29 16:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6c19264
 2025-01-29 16:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 16:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 16:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7144,7 +7144,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 17:00:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(511): true
-2025-01-29 17:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5b361f84
+2025-01-29 17:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5b361f84
 2025-01-29 17:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 17:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 17:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7199,10 +7199,10 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 17:00:52 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 26.0440813
 2025-01-29 17:00:52 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 9.11E-6
 2025-01-29 17:01:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 17:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@154ac013
-2025-01-29 17:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@574cee23
+2025-01-29 17:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@154ac013
+2025-01-29 17:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@574cee23
 2025-01-29 17:03:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 17:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@528d31fa
+2025-01-29 17:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@528d31fa
 2025-01-29 17:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
 2025-01-29 17:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxQty=9000.0
@@ -7217,7 +7217,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 17:03:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 16.8597613
 2025-01-29 17:03:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 9.902E-5
 2025-01-29 17:04:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 17:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@69fca22e
+2025-01-29 17:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@69fca22e
 2025-01-29 17:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 17:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 17:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7244,7 +7244,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 17:04:02 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@44e4ab35
 2025-01-29 17:04:02 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "STOP LOSS" order was accepted.
 2025-01-29 17:05:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 17:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7999676a
+2025-01-29 17:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7999676a
 2025-01-29 17:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 17:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 17:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7283,13 +7283,13 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:314)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 17:06:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
-2025-01-29 17:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@cdcfdb5
+2025-01-29 17:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@cdcfdb5
 2025-01-29 17:07:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
-2025-01-29 17:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5c09cfba
+2025-01-29 17:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5c09cfba
 2025-01-29 17:08:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(506): true
-2025-01-29 17:08:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@3f649125
+2025-01-29 17:08:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@3f649125
 2025-01-29 17:09:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(507): true
-2025-01-29 17:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@3201ad31
+2025-01-29 17:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@3201ad31
 2025-01-29 17:09:26 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/exchangeInfo
 2025-01-29 17:09:31 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/account?signature=481d6eef723f2543a5221fbfb62f9d7991c7768cb1b5bd12222ecd77aa5de8fb&timestamp=1738166971284
 2025-01-29 17:09:31 [main] INFO  c.b.c.client.utils.RequestHandler - GET https://api3.binance.com/api/v3/exchangeInfo
@@ -7303,7 +7303,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 2025-01-29 17:09:36 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 2] Connected to Server
 2025-01-29 17:09:36 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 3] Connected to Server
 2025-01-29 17:10:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
-2025-01-29 17:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5c34c7a1
+2025-01-29 17:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5c34c7a1
 2025-01-29 17:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
 2025-01-29 17:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxQty=9000.0
@@ -7351,7 +7351,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-1013,"m
 	at autotrader.binance.BinanceTrader.lambda$new$0(BinanceTrader.java:37)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 2025-01-29 17:11:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
-2025-01-29 17:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6269e0ca
+2025-01-29 17:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6269e0ca
 2025-01-29 17:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - Price filter:
 2025-01-29 17:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minPrice=0.01
 2025-01-29 17:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxPrice=1000000.0
@@ -7402,23 +7402,23 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:13:44 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 2] Connected to Server
 2025-01-29 17:13:44 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 3] Connected to Server
 2025-01-29 17:14:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 17:14:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@581332eb
+2025-01-29 17:14:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@581332eb
 2025-01-29 17:15:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
-2025-01-29 17:15:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@7f9595e6
+2025-01-29 17:15:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@7f9595e6
 2025-01-29 17:16:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(501): true
-2025-01-29 17:16:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@1d986363
+2025-01-29 17:16:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@1d986363
 2025-01-29 17:17:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(502): true
-2025-01-29 17:17:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5c5d8e51
+2025-01-29 17:17:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5c5d8e51
 2025-01-29 17:18:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(503): true
-2025-01-29 17:18:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@735e26e4
+2025-01-29 17:18:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@735e26e4
 2025-01-29 17:19:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(504): true
-2025-01-29 17:19:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@2037a7cc
+2025-01-29 17:19:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@2037a7cc
 2025-01-29 17:20:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
-2025-01-29 17:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@7e6a4bd2
+2025-01-29 17:20:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@7e6a4bd2
 2025-01-29 17:23:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 17:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@5770b5e5
+2025-01-29 17:23:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@5770b5e5
 2025-01-29 17:24:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
-2025-01-29 17:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4f634c58
+2025-01-29 17:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4f634c58
 2025-01-29 17:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
 2025-01-29 17:24:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - maxQty=9000.0
@@ -7432,37 +7432,37 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:24:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 16.84688906
 2025-01-29 17:24:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 9.884E-5
 2025-01-29 17:25:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 17:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@36ad3df4
+2025-01-29 17:25:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@36ad3df4
 2025-01-29 17:26:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 17:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@106e699f
+2025-01-29 17:26:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@106e699f
 2025-01-29 17:27:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 17:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@76a69328
+2025-01-29 17:27:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@76a69328
 2025-01-29 17:28:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
-2025-01-29 17:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@18949e57
+2025-01-29 17:28:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@18949e57
 2025-01-29 17:29:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(505): true
-2025-01-29 17:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4789522c
+2025-01-29 17:29:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4789522c
 2025-01-29 17:30:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
-2025-01-29 17:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@24c8f9d3
+2025-01-29 17:30:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@24c8f9d3
 2025-01-29 17:31:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(507): true
-2025-01-29 17:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@66b501b1
+2025-01-29 17:31:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@66b501b1
 2025-01-29 17:32:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(508): true
-2025-01-29 17:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5aef5d16
+2025-01-29 17:32:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5aef5d16
 2025-01-29 17:33:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(509): true
-2025-01-29 17:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@577a6c55
+2025-01-29 17:33:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@577a6c55
 2025-01-29 17:34:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(510): true
-2025-01-29 17:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@349f0108
-2025-01-29 17:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.adapter.CandleBar$1@7a6926a3
+2025-01-29 17:34:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@349f0108
+2025-01-29 17:35:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleCandleSignal candle autotrader.binance.bar.CandleBar$1@7a6926a3
 2025-01-29 17:36:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(512): true
-2025-01-29 17:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5aced315
+2025-01-29 17:36:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5aced315
 2025-01-29 17:37:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(513): true
-2025-01-29 17:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5e5204dd
+2025-01-29 17:37:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5e5204dd
 2025-01-29 17:38:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(514): true
-2025-01-29 17:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1289c95e
+2025-01-29 17:38:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1289c95e
 2025-01-29 17:38:12 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@72f6941e
 2025-01-29 17:38:12 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 26.0168747
 2025-01-29 17:38:12 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 8.84E-6
 2025-01-29 17:41:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
-2025-01-29 17:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3a56f96
+2025-01-29 17:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3a56f96
 2025-01-29 17:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:41:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
@@ -7477,35 +7477,35 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:41:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 16.8308978
 2025-01-29 17:41:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 9.875E-5
 2025-01-29 17:42:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
-2025-01-29 17:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@776362c2
+2025-01-29 17:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@776362c2
 2025-01-29 17:42:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:43:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 17:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@40994f27
+2025-01-29 17:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@40994f27
 2025-01-29 17:43:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:44:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 17:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6b3d8403
+2025-01-29 17:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6b3d8403
 2025-01-29 17:44:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:45:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 17:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@73793ae5
+2025-01-29 17:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@73793ae5
 2025-01-29 17:45:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:46:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
-2025-01-29 17:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1f60233a
+2025-01-29 17:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1f60233a
 2025-01-29 17:46:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:47:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(505): true
-2025-01-29 17:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@158aa786
+2025-01-29 17:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@158aa786
 2025-01-29 17:47:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:47:53 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@314554a7
 2025-01-29 17:47:53 [Thread-0] TRACE autotrader.binance.BinanceTrader - Order update received: autotrader.binance.model.update.OrderUpdate@3496ebee
 2025-01-29 17:47:53 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 26.00315636
 2025-01-29 17:47:53 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 8.75E-6
 2025-01-29 17:48:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 17:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@738838e
+2025-01-29 17:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@738838e
 2025-01-29 17:48:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:49:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
-2025-01-29 17:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@339d0b9f
+2025-01-29 17:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@339d0b9f
 2025-01-29 17:49:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4011a770
+2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4011a770
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
@@ -7516,7 +7516,7 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - free=8.667718786666667
 2025-01-29 17:50:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - amount=9.0E-5
 2025-01-29 17:51:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
-2025-01-29 17:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@5f0d7f91
+2025-01-29 17:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@5f0d7f91
 2025-01-29 17:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:51:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
@@ -7531,19 +7531,19 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:51:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 19.86913262
 2025-01-29 17:51:00 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 6.86E-5
 2025-01-29 17:52:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(500): true
-2025-01-29 17:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@89602eb
+2025-01-29 17:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@89602eb
 2025-01-29 17:52:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:53:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 17:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@777be88c
+2025-01-29 17:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@777be88c
 2025-01-29 17:53:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:54:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 17:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@4a9f34d5
+2025-01-29 17:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@4a9f34d5
 2025-01-29 17:54:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:55:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 17:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1a69b1ac
+2025-01-29 17:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1a69b1ac
 2025-01-29 17:55:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 17:57:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(499): true
-2025-01-29 17:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@7fb5ee34
+2025-01-29 17:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@7fb5ee34
 2025-01-29 17:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 17:57:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
@@ -7564,13 +7564,13 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 17:57:58 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Base asset USDT balance updated: 25.97648156
 2025-01-29 17:57:58 [pool-1-thread-2] INFO  a.b.h.BinanceGeneralUpdateHandler - Quote asset BTC balance updated: 8.51E-6
 2025-01-29 17:58:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(499): true
-2025-01-29 17:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@f13e170
+2025-01-29 17:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@f13e170
 2025-01-29 17:58:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 17:59:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledFallingRule - AngledFallingRule#isSatisfied(500): true
-2025-01-29 17:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.adapter.CandleBar$1@15dfa46b
+2025-01-29 17:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleSellSignal candle autotrader.binance.bar.CandleBar$1@15dfa46b
 2025-01-29 17:59:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 18:00:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(501): true
-2025-01-29 18:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1b5560a1
+2025-01-29 18:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1b5560a1
 2025-01-29 18:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: null
 2025-01-29 18:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - LotSize filter:
 2025-01-29 18:00:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - minQty=1.0E-5
@@ -7586,41 +7586,41 @@ com.binance.connector.client.exceptions.BinanceClientException: {"code":-2010,"m
 2025-01-29 18:00:00 [Thread-0] TRACE autotrader.binance.BinanceTrader - handleUpdate update ORDER
 2025-01-29 18:00:00 [Thread-0] DEBUG autotrader.binance.BinanceTrader - "BUY" order was accepted.
 2025-01-29 18:01:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(502): true
-2025-01-29 18:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3f73cb7a
+2025-01-29 18:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3f73cb7a
 2025-01-29 18:01:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:02:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(503): true
-2025-01-29 18:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3adde71e
+2025-01-29 18:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3adde71e
 2025-01-29 18:02:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:03:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(504): true
-2025-01-29 18:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@740df376
+2025-01-29 18:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@740df376
 2025-01-29 18:03:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:04:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(505): true
-2025-01-29 18:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@18dab8d0
+2025-01-29 18:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@18dab8d0
 2025-01-29 18:04:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:05:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(506): true
-2025-01-29 18:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@395398aa
+2025-01-29 18:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@395398aa
 2025-01-29 18:05:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:06:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(507): true
-2025-01-29 18:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6ce36d89
+2025-01-29 18:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6ce36d89
 2025-01-29 18:06:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:07:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(508): true
-2025-01-29 18:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@77eeb520
+2025-01-29 18:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@77eeb520
 2025-01-29 18:07:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:08:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(509): true
-2025-01-29 18:08:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@3abf8f35
+2025-01-29 18:08:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@3abf8f35
 2025-01-29 18:08:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:09:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(510): true
-2025-01-29 18:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@1f8cc600
+2025-01-29 18:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@1f8cc600
 2025-01-29 18:09:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:10:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(511): true
-2025-01-29 18:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@68746f5d
+2025-01-29 18:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@68746f5d
 2025-01-29 18:10:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:11:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(512): true
-2025-01-29 18:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@6ab190c6
+2025-01-29 18:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@6ab190c6
 2025-01-29 18:11:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:12:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(513): true
-2025-01-29 18:12:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@2c316c82
+2025-01-29 18:12:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@2c316c82
 2025-01-29 18:12:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW
 2025-01-29 18:13:00 [pool-1-thread-1] TRACE a.binance.strategy.AngledRisingRule - AngledRisingRule#isSatisfied(514): true
-2025-01-29 18:13:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.adapter.CandleBar$1@55f403c2
+2025-01-29 18:13:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - handleBuySignal candle autotrader.binance.bar.CandleBar$1@55f403c2
 2025-01-29 18:13:00 [pool-1-thread-1] TRACE autotrader.binance.BinanceTrader - trader phase: NEW

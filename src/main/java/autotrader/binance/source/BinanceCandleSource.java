@@ -1,6 +1,6 @@
 package autotrader.binance.source;
 
-import autotrader.binance.adapter.CandleBar;
+import autotrader.binance.bar.CandleBar;
 import autotrader.binance.dto.candle.CandleStickEventDTO;
 import autotrader.binance.model.Candle;
 import autotrader.binance.util.Periods;
@@ -9,6 +9,7 @@ import autotrader.util.JSON;
 import com.binance.connector.client.WebSocketStreamClient;
 import com.binance.connector.client.utils.websocketcallback.WebSocketMessageCallback;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.ta4j.core.num.DecimalNum;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -28,12 +29,18 @@ public class BinanceCandleSource implements CandleSource<Candle> {
                 var candleStickEventDTO = JSON.readObject(data, CandleStickEventDTO.class);
                 var candleStickDTO = candleStickEventDTO.getCandleStickDTO();
 
-                var bar = new CandleBar(Periods.toDuration(period),
-                        ZonedDateTime.ofInstant(Instant.ofEpochMilli(candleStickDTO.getCloseTime()),
-                                ZoneId.of("UTC")),
-                        candleStickDTO.getOpenPrice(), candleStickDTO.getHighPrice(),
-                        candleStickDTO.getLowPrice(), candleStickDTO.getClosePrice(),
-                        candleStickDTO.getVolume(), candleStickDTO.getTrades());
+                var bar = new CandleBar();
+                bar.setTimePeriod(Periods.toDuration(period));
+                bar.setBeginTime(ZonedDateTime.ofInstant(Instant.ofEpochMilli(candleStickDTO.getOpenTime()),
+                        ZoneId.of("UTC")));
+                bar.setEndTime(ZonedDateTime.ofInstant(Instant.ofEpochMilli(candleStickDTO.getCloseTime()),
+                        ZoneId.of("UTC")));
+                bar.setOpenPrice(DecimalNum.valueOf(candleStickDTO.getOpenPrice()));
+                bar.setHighPrice(DecimalNum.valueOf(candleStickDTO.getHighPrice()));
+                bar.setLowPrice(DecimalNum.valueOf(candleStickDTO.getLowPrice()));
+                bar.setClosePrice(DecimalNum.valueOf(candleStickDTO.getClosePrice()));
+                bar.setVolume(DecimalNum.valueOf(candleStickDTO.getVolume()));
+                bar.setTrades(candleStickDTO.getTrades());
                 bar.setClosed(candleStickDTO.isClosed());
 
                 var candle = bar.toCandle();
