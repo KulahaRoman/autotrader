@@ -11,6 +11,10 @@ public class TrailingDeltaFilter extends Filter {
     private double minTrailingBelowDelta;
     private double maxTrailingBelowDelta;
 
+    public TrailingDeltaFilter() {
+        super(FilterType.TRAILING_DELTA);
+    }
+
     public TrailingDeltaFilter(double minTrailingAboveDelta, double maxTrailingAboveDelta,
                                double minTrailingBelowDelta, double maxTrailingBelowDelta) {
         super(FilterType.TRAILING_DELTA);

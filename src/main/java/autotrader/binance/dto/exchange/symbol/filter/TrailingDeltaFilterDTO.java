@@ -3,13 +3,19 @@ package autotrader.binance.dto.exchange.symbol.filter;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class TrailingDeltaFilterDTO extends FilterDTO {
-    private final double minTrailingAboveDelta;
-    private final double maxTrailingAboveDelta;
-    private final double minTrailingBelowDelta;
-    private final double maxTrailingBelowDelta;
+    private double minTrailingAboveDelta;
+    private double maxTrailingAboveDelta;
+    private double minTrailingBelowDelta;
+    private double maxTrailingBelowDelta;
+
+    public TrailingDeltaFilterDTO() {
+        super("TRAILING_DELTA");
+    }
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public TrailingDeltaFilterDTO(@JsonProperty("minTrailingAboveDelta") double minTrailingAboveDelta,

@@ -1,4 +1,4 @@
-package autotrader.binance;
+package autotrader.binance.provider;
 
 import autotrader.binance.dto.exchange.ExchangeDTO;
 import autotrader.binance.mapper.ExchangeMapper;
@@ -21,7 +21,7 @@ public class BinanceExchangeProvider implements ExchangeProvider {
         var response = spotClient.createMarket().exchangeInfo(Collections.emptyMap());
         try {
             var exchangeDTO = JSON.readObject(response, ExchangeDTO.class);
-            var exchange = ExchangeMapper.INSTANCE.toModel(exchangeDTO);
+            var exchange = ExchangeMapper.toModel(exchangeDTO);
 
             return exchange;
         } catch (JsonProcessingException e) {

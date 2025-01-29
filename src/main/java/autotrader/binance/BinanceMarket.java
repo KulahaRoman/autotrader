@@ -1,52 +1,51 @@
 package autotrader.binance;
 
 import autotrader.binance.dto.OrderDTO;
+import autotrader.binance.mapper.OrderMapper;
+import autotrader.binance.model.Order;
+import autotrader.binance.model.OrderStatus;
 import autotrader.core.Market;
 import autotrader.util.JSON;
 import com.binance.connector.client.SpotClient;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.time.Instant;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class BinanceMarket implements Market<Trade> {
-    private final SpotClient client;
+public class BinanceMarket implements Market<Order> {
+    private final SpotClient spotClient;
 
-    public BinanceMarket(SpotClient client) {
-        this.client = client;
+    public BinanceMarket(SpotClient spotClient) {
+        this.spotClient = spotClient;
     }
 
     @Override
-    public void placeOrder(Trade trade) {
-        switch (trade.getType()) {
-            case BUY -> placeBuyOrder(trade);
-            case SELL -> placeSellOrder(trade);
-        }
-    }
-
-    private void placeBuyOrder(Trade trade) {
-        Map<String, Object> parameters = new LinkedHashMap<>();
-        parameters.put("symbol", trade.getSymbol());
-        parameters.put("side", "BUY");
-        parameters.put("type", "STOP_LOSS");
-        parameters.put("quantity", trade.getAmount());
-        parameters.put("stopPrice", trade.getPrice());
-
-        var response = client.createTrade().testNewOrder(parameters);
+    public Order placeOrder(Map<String, Object> params) {
+        var response = spotClient.createTrade().newOrder(params);
         try {
-            JSON.readObject(response, OrderDTO.class);
+            var orderDTO = JSON.readObject(response, OrderDTO.class);
+            return OrderMapper.toModel(orderDTO);
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Failed to parse response.", e);
         }
     }
 
-    private void placeSellOrder(Trade trade) {
+    @Override
+    public void cancelOrder(Order order) {
         Map<String, Object> parameters = new LinkedHashMap<>();
-        parameters.put("symbol", trade.getSymbol());
-        parameters.put("side", "SELL");
-        parameters.put("type", "MARKET");
-        parameters.put("quantity", trade.getAmount());
+        parameters.put("symbol", order.getSymbol());
+        parameters.put("orderId", order.getOrderID());
+        parameters.put("timestamp", Instant.now().toEpochMilli());
 
-        client.createTrade().testNewOrder(parameters);
+        var response = spotClient.createTrade().cancelOrder(parameters);
+        try {
+            var orderDTO = JSON.readObject(response, OrderDTO.class);
+            if (OrderMapper.toModel(orderDTO).getStatus() != OrderStatus.CANCELED) {
+                throw new RuntimeException("Failed to cancel order.");
+            }
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Failed to parse response.", e);
+        }
     }
 }

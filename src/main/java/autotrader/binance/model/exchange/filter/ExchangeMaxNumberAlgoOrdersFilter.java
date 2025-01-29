@@ -8,6 +8,10 @@ import lombok.Setter;
 public class ExchangeMaxNumberAlgoOrdersFilter extends Filter {
     private int maxNumberAlgoOrders;
 
+    public ExchangeMaxNumberAlgoOrdersFilter() {
+        super(FilterType.EXCHANGE_MAX_NUM_ALGO_ORDERS);
+    }
+
     public ExchangeMaxNumberAlgoOrdersFilter(int maxNumberAlgoOrders) {
         super(FilterType.EXCHANGE_MAX_NUM_ALGO_ORDERS);
         this.maxNumberAlgoOrders = maxNumberAlgoOrders;

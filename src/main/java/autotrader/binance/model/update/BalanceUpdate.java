@@ -10,6 +10,10 @@ public class BalanceUpdate extends Update {
     private double balanceDelta;
     private long clearTime;
 
+    public BalanceUpdate(long updateTime) {
+        super(UpdateType.BALANCE, updateTime);
+    }
+
     public BalanceUpdate(long updateTime, String asset, double balanceDelta, long clearTime) {
         super(UpdateType.BALANCE, updateTime);
         this.asset = asset;

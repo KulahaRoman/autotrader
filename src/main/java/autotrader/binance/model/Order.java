@@ -13,4 +13,6 @@ public class Order {
     private long orderListID;
     private String clientOrderID;
     private long transactionTime;
+    private double price;
+    private OrderStatus status;
 }

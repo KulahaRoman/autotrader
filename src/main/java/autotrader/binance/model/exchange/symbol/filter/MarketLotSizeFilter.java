@@ -10,6 +10,10 @@ public class MarketLotSizeFilter extends Filter {
     private double maxQuantity;
     private double stepSize;
 
+    public MarketLotSizeFilter() {
+        super(FilterType.MARKET_LOT_SIZE);
+    }
+
     public MarketLotSizeFilter(double minQuantity, double maxQuantity, double stepSize) {
         super(FilterType.MARKET_LOT_SIZE);
         this.minQuantity = minQuantity;

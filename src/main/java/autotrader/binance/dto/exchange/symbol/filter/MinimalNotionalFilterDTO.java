@@ -3,12 +3,18 @@ package autotrader.binance.dto.exchange.symbol.filter;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class MinimalNotionalFilterDTO extends FilterDTO {
-    private final double minNotional;
-    private final boolean applyToMarket;
-    private final int averagePriceMinimums;
+    private double minNotional;
+    private boolean applyToMarket;
+    private int averagePriceMinimums;
+
+    public MinimalNotionalFilterDTO() {
+        super("MIN_NOTIONAL");
+    }
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public MinimalNotionalFilterDTO(@JsonProperty("minNotional") double minNotional,

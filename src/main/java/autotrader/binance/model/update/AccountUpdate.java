@@ -12,6 +12,10 @@ public class AccountUpdate extends Update {
     private long lastTimeUpdate;
     private List<Balance> balances;
 
+    public AccountUpdate(long updateTime) {
+        super(UpdateType.ACCOUNT, updateTime);
+    }
+
     public AccountUpdate(long updateTime, long lastTimeUpdate, List<Balance> balances) {
         super(UpdateType.ACCOUNT, updateTime);
         this.lastTimeUpdate = lastTimeUpdate;

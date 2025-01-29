@@ -2,14 +2,23 @@ package autotrader.binance.mapper;
 
 import autotrader.binance.dto.BalanceDTO;
 import autotrader.binance.model.Balance;
-import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
-@Mapper
-public interface BalanceMapper {
-    BalanceMapper INSTANCE = Mappers.getMapper(BalanceMapper.class);
-    
-    BalanceDTO toDTO(Balance balance);
+public class BalanceMapper {
+    public static BalanceDTO toDTO(Balance balance) {
+        var balanceDTO = new BalanceDTO();
+        balanceDTO.setAsset(balance.getAsset());
+        balanceDTO.setFree(balance.getFree());
+        balanceDTO.setLocked(balance.getLocked());
 
-    Balance toModel(BalanceDTO balanceDTO);
+        return balanceDTO;
+    }
+
+    public static Balance toModel(BalanceDTO balanceDTO) {
+        var balance = new Balance();
+        balance.setAsset(balanceDTO.getAsset());
+        balance.setFree(balanceDTO.getFree());
+        balance.setLocked(balanceDTO.getLocked());
+
+        return balance;
+    }
 }

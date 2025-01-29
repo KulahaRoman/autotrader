@@ -11,6 +11,10 @@ public class PriceFilter extends Filter {
     private double maxPrice;
     private double tickSize;
 
+    public PriceFilter() {
+        super(FilterType.PRICE_FILTER);
+    }
+
     public PriceFilter(double minPrice, double maxPrice, double tickSize) {
         super(FilterType.PRICE_FILTER);
         this.minPrice = minPrice;

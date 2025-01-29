@@ -1,10 +1,12 @@
 package autotrader.binance.model.exchange.filter;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@AllArgsConstructor
 public abstract class Filter {
-    private final FilterType filterType;
+    private FilterType filterType;
 }

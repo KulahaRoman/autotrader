@@ -1,5 +1,6 @@
 package autotrader.binance.model.update;
 
+import autotrader.binance.model.OrderStatus;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -19,7 +20,7 @@ public class OrderUpdate extends Update {
     private long orderListID;
     private String originalClientOrderID;
     private ExecutionType currentExecutionType;
-    private String currentOrderStatus;
+    private OrderStatus currentOrderStatus;
     private String orderRejectReason;
     private long orderID;
     private double lastExecutedQuantity;
@@ -39,11 +40,15 @@ public class OrderUpdate extends Update {
     private long workingTime;
     private String selfTradePreventionMode;
 
+    public OrderUpdate(long updateTime) {
+        super(UpdateType.ORDER, updateTime);
+    }
+
     public OrderUpdate(long updateTime, String symbol, String clientOrderID,
                        String side, String orderType, String timeInForce, double orderQuantity,
                        double orderPrice, double stopPrice, double icebergQuantity,
                        long orderListID, String originalClientOrderID, ExecutionType currentExecutionType,
-                       String currentOrderStatus, String orderRejectReason, long orderID,
+                       OrderStatus currentOrderStatus, String orderRejectReason, long orderID,
                        double lastExecutedQuantity, double cumulativeFilledQuantity, double lastExecutedPrice,
                        double commissionAmount, String commissionAsset, long transactionTime,
                        long tradeID, long preventedMatchID, boolean isOrderOnBook,

@@ -27,4 +27,6 @@ public interface Candle {
     boolean isBearish();
 
     boolean isBullish();
+
+    boolean isClosed();
 }

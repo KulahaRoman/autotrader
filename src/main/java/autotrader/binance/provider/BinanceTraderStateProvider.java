@@ -1,4 +1,6 @@
-package autotrader.binance;
+package autotrader.binance.provider;
+
+import autotrader.binance.TraderState;
 
 import java.util.Properties;
 
@@ -16,7 +18,7 @@ public class BinanceTraderStateProvider implements TraderStateProvider {
         var baseAsset = symbol.substring(symbol.length() / 2);
 
         var account = accountProvider.getAccount();
-        
+
         var quoteBalance = account.getBalances()
                 .stream()
                 .filter(balance -> balance.getAsset().equals(quoteAsset))

@@ -1,45 +1,55 @@
 package autotrader.binance.dto.update;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class OrderUpdateDTO extends UpdateDTO {
-    private final String symbol;
-    private final String clientOrderID;
-    private final String side;
-    private final String orderType;
-    private final String timeInForce;
-    private final double orderQuantity;
-    private final double orderPrice;
-    private final double stopPrice;
-    private final double icebergQuantity;
-    private final long orderListID;
-    private final String originalClientOrderID;
-    private final String currentExecutionType;
-    private final String currentOrderStatus;
-    private final String orderRejectReason;
-    private final long orderID;
-    private final double lastExecutedQuantity;
-    private final double cumulativeFilledQuantity;
-    private final double lastExecutedPrice;
-    private final double commissionAmount;
-    private final String commissionAsset;
-    private final long transactionTime;
-    private final long tradeID;
-    private final long preventedMatchID;
-    private final boolean isOrderOnBook;
-    private final boolean isTradeMakerSide;
-    private final long orderCreationTime;
-    private final double cumulativeQuoteAssetTransactedQuantity;
-    private final double lastQuoteTransactedQuantity;
-    private final double quoteOrderQuantity;
-    private final long workingTime;
-    private final String selfTradePreventionMode;
+    private long eventTime;
+    private String symbol;
+    private String clientOrderID;
+    private String side;
+    private String orderType;
+    private String timeInForce;
+    private double orderQuantity;
+    private double orderPrice;
+    private double stopPrice;
+    private double icebergQuantity;
+    private long orderListID;
+    private String originalClientOrderID;
+    private String currentExecutionType;
+    private String currentOrderStatus;
+    private String orderRejectReason;
+    private long orderID;
+    private double lastExecutedQuantity;
+    private double cumulativeFilledQuantity;
+    private double lastExecutedPrice;
+    private double commissionAmount;
+    private String commissionAsset;
+    private long transactionTime;
+    private long tradeID;
+    private long preventedMatchID;
+    private boolean isOrderOnBook;
+    private boolean isTradeMakerSide;
+    private long orderCreationTime;
+    private double cumulativeQuoteAssetTransactedQuantity;
+    private double lastQuoteTransactedQuantity;
+    private double quoteOrderQuantity;
+    private long workingTime;
+    private String selfTradePreventionMode;
 
-    @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public OrderUpdateDTO(@JsonProperty("E") long eventTime,
+    public OrderUpdateDTO() {
+        super("executionReport");
+    }
+
+    @JsonCreator
+    public OrderUpdateDTO(@JsonProperty("e") String eventType,
+                          @JsonProperty("E") long eventTime,
                           @JsonProperty("s") String symbol,
                           @JsonProperty("c") String clientOrderID,
                           @JsonProperty("S") String side,
@@ -71,7 +81,8 @@ public class OrderUpdateDTO extends UpdateDTO {
                           @JsonProperty("Q") double quoteOrderQuantity,
                           @JsonProperty("W") long workingTime,
                           @JsonProperty("V") String selfTradePreventionMode) {
-        super("executionReport", eventTime);
+        super(eventType);
+        this.eventTime = eventTime;
         this.symbol = symbol;
         this.clientOrderID = clientOrderID;
         this.side = side;

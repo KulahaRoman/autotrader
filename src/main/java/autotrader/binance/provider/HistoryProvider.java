@@ -1,4 +1,4 @@
-package autotrader.binance;
+package autotrader.binance.provider;
 
 import autotrader.binance.model.Candle;
 

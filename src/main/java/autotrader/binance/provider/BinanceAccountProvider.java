@@ -1,4 +1,4 @@
-package autotrader.binance;
+package autotrader.binance.provider;
 
 import autotrader.binance.dto.account.AccountDTO;
 import autotrader.binance.mapper.AccountMapper;
@@ -25,8 +25,8 @@ public class BinanceAccountProvider implements AccountProvider {
         var response = spotClient.createTrade().account(parameters);
         try {
             var accountDTO = JSON.readObject(response, AccountDTO.class);
-            var account = AccountMapper.INSTANCE.toModel(accountDTO);
-            
+            var account = AccountMapper.toModel(accountDTO);
+
             return account;
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);

@@ -1,21 +1,32 @@
 package autotrader.binance.dto.update;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class BalanceUpdateDTO extends UpdateDTO {
-    private final String asset;
-    private final double balanceDelta;
-    private final long clearTime;
+    private long eventTime;
+    private String asset;
+    private double balanceDelta;
+    private long clearTime;
 
-    @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public BalanceUpdateDTO(@JsonProperty("E") long eventTime,
+    public BalanceUpdateDTO(long eventTime) {
+        super("balanceUpdate");
+    }
+
+    @JsonCreator
+    public BalanceUpdateDTO(@JsonProperty("e") String eventType,
+                            @JsonProperty("E") long eventTime,
                             @JsonProperty("a") String asset,
                             @JsonProperty("d") double balanceDelta,
                             @JsonProperty("T") long clearTime) {
-        super("balanceUpdate", eventTime);
+        super(eventType);
+        this.eventTime = eventTime;
         this.asset = asset;
         this.balanceDelta = balanceDelta;
         this.clearTime = clearTime;

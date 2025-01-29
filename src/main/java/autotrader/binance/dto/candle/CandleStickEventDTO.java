@@ -1,18 +1,22 @@
 package autotrader.binance.dto.candle;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CandleStickEventDTO {
     @JsonProperty("e")
-    private final String eventType;
+    private String eventType;
     @JsonProperty("E")
-    private final long eventTime;
+    private long eventTime;
     @JsonProperty("s")
-    private final String symbol;
+    private String symbol;
     @JsonProperty("k")
-    private final CandleStickDTO candleStickDTO;
+    private CandleStickDTO candleStickDTO;
 }

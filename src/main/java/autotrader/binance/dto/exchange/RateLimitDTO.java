@@ -1,18 +1,22 @@
 package autotrader.binance.dto.exchange;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RateLimitDTO {
     @JsonProperty("rateLimitType")
-    private final String rateLimitType;
+    private String rateLimitType;
     @JsonProperty("interval")
-    private final String interval;
+    private String interval;
     @JsonProperty("intervalNum")
-    private final int intervalNumber;
+    private int intervalNumber;
     @JsonProperty("limit")
-    private final int limit;
+    private int limit;
 }

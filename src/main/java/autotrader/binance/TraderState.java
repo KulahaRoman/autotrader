@@ -12,9 +12,12 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class TraderState {
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
 
+    private Trade trade;
+    private Phase phase;
+    private Context context;
+
     private Balance baseAssetBalance;
     private Balance quoteAssetBalance;
-    private Trade activeTrade;
 
     public Balance getBaseAssetBalance() {
         lock.readLock().lock();
@@ -52,30 +55,57 @@ public class TraderState {
         }
     }
 
-    public Trade getActiveTrade() {
+    public Trade getTrade() {
         lock.readLock().lock();
         try {
-            return activeTrade;
+            return trade;
         } finally {
             lock.readLock().unlock();
         }
     }
 
-    public void setActiveTrade(Trade activeTrade) {
+    public void setTrade(Trade trade) {
         lock.writeLock().lock();
         try {
-            this.activeTrade = activeTrade;
+            this.trade = trade;
         } finally {
             lock.writeLock().unlock();
         }
     }
 
-    public boolean hasActiveTrade() {
+    public Phase getPhase() {
         lock.readLock().lock();
         try {
-            return activeTrade != null;
+            return phase;
         } finally {
             lock.readLock().unlock();
+        }
+    }
+
+    public void setPhase(Phase phase) {
+        lock.writeLock().lock();
+        try {
+            this.phase = phase;
+        } finally {
+            lock.writeLock().unlock();
+        }
+    }
+
+    public Context getContext() {
+        lock.readLock().lock();
+        try {
+            return context;
+        } finally {
+            lock.readLock().unlock();
+        }
+    }
+
+    public void setContext(Context context) {
+        lock.writeLock().lock();
+        try {
+            this.context = context;
+        } finally {
+            lock.writeLock().unlock();
         }
     }
 }

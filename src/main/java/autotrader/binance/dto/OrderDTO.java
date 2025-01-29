@@ -1,20 +1,28 @@
 package autotrader.binance.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class OrderDTO {
     @JsonProperty("symbol")
-    private final String symbol;
+    private String symbol;
     @JsonProperty("orderId")
-    private final long orderID;
+    private long orderID;
     @JsonProperty("orderListId")
-    private final long orderListID;
+    private long orderListID;
     @JsonProperty("clientOrderId")
-    private final String clientOrderID;
+    private String clientOrderID;
     @JsonProperty("transactTime")
-    private final long transactionTime;
+    private long transactionTime;
+    @JsonProperty("price")
+    private double price;
+    @JsonProperty("status")
+    private String status;
 }

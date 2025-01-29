@@ -1,6 +1,8 @@
 package autotrader.binance.adapter;
 
 import autotrader.binance.model.Candle;
+import lombok.Getter;
+import lombok.Setter;
 import org.ta4j.core.BaseBar;
 import org.ta4j.core.num.DecimalNum;
 import org.ta4j.core.num.Num;
@@ -10,11 +12,13 @@ import java.time.Duration;
 import java.time.ZonedDateTime;
 import java.util.function.Function;
 
+@Getter
+@Setter
 public class CandleBar extends BaseBar {
+    private boolean isClosed;
 
     public CandleBar(Candle candle) {
-        super(
-                candle.getTimePeriod(),
+        super(candle.getTimePeriod(),
                 candle.getCloseTime(),
                 DecimalNum.valueOf(candle.getOpenPrice()),
                 DecimalNum.valueOf(candle.getHighPrice()),
@@ -23,6 +27,7 @@ public class CandleBar extends BaseBar {
                 DecimalNum.valueOf(candle.getVolume()),
                 DecimalNum.valueOf(candle.getAmount()),
                 candle.getTrades());
+        this.isClosed = candle.isClosed();
     }
 
     public CandleBar(Duration timePeriod, ZonedDateTime endTime, Function<Number, Num> numFunction) {
@@ -160,6 +165,11 @@ public class CandleBar extends BaseBar {
             @Override
             public boolean isBullish() {
                 return self.isBullish();
+            }
+
+            @Override
+            public boolean isClosed() {
+                return self.isClosed;
             }
         };
     }

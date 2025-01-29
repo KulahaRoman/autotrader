@@ -1,45 +1,49 @@
 package autotrader.binance.dto.account;
 
 import autotrader.binance.dto.BalanceDTO;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AccountDTO {
     @JsonProperty("makerCommission")
-    private final int makerCommission;
+    private int makerCommission;
     @JsonProperty("takerCommission")
-    private final int takerCommission;
+    private int takerCommission;
     @JsonProperty("buyerCommission")
-    private final int buyerCommission;
+    private int buyerCommission;
     @JsonProperty("sellerCommission")
-    private final int sellerCommission;
+    private int sellerCommission;
     @JsonProperty("commissionRates")
-    private final CommissionRateDTO commissionRateDTO;
+    private CommissionRateDTO commissionRateDTO;
     @JsonProperty("canTrade")
-    private final boolean canTrade;
+    private boolean canTrade;
     @JsonProperty("canWithdraw")
-    private final boolean canWithdraw;
+    private boolean canWithdraw;
     @JsonProperty("canDeposit")
-    private final boolean canDeposit;
+    private boolean canDeposit;
     @JsonProperty("brokered")
-    private final boolean brokered;
+    private boolean brokered;
     @JsonProperty("requireSelfTradePrevention")
-    private final boolean requireSelfTradePrevention;
+    private boolean requireSelfTradePrevention;
     @JsonProperty("preventSor")
-    private final boolean preventSor;
+    private boolean preventSor;
     @JsonProperty("updateTime")
-    private final long updateTime;
+    private long updateTime;
     @JsonProperty("accountType")
-    private final String accountType;
+    private String accountType;
     @JsonProperty("balances")
-    private final List<BalanceDTO> balanceDTOS;
+    private List<BalanceDTO> balanceDTOS;
     @JsonProperty("permissions")
-    private final List<String> permissions;
+    private List<String> permissions;
     @JsonProperty("uid")
-    private final long userID;
+    private long userID;
 }

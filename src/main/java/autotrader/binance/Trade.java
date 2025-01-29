@@ -1,5 +1,6 @@
 package autotrader.binance;
 
+import autotrader.binance.model.Order;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,7 +9,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Trade {
-    private TradeType type;
     private String symbol;
     private double price;
     private double amount;

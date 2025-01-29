@@ -1,5 +1,5 @@
 package autotrader.core;
 
-public interface CandleSource<C> extends AutoCloseable {
-    C nextCandle() throws Exception;
+public interface CandleSource<C> {
+    C nextCandle();
 }

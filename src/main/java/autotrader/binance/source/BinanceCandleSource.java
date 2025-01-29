@@ -1,4 +1,4 @@
-package autotrader.binance;
+package autotrader.binance.source;
 
 import autotrader.binance.adapter.CandleBar;
 import autotrader.binance.dto.candle.CandleStickEventDTO;
@@ -17,13 +17,9 @@ import java.util.Properties;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class BinanceCandleSource implements CandleSource<Candle> {
-    private final WebSocketStreamClient client;
-
     private final AtomicReference<Candle> temporaryCandle = new AtomicReference<>();
 
     public BinanceCandleSource(WebSocketStreamClient client, Properties configuration) {
-        this.client = client;
-
         var symbol = configuration.getProperty("symbol").toUpperCase();
         var period = configuration.getProperty("period");
 
@@ -32,15 +28,21 @@ public class BinanceCandleSource implements CandleSource<Candle> {
                 var candleStickEventDTO = JSON.readObject(data, CandleStickEventDTO.class);
                 var candleStickDTO = candleStickEventDTO.getCandleStickDTO();
 
-                temporaryCandle.set(new CandleBar(Periods.toDuration(period),
+                var bar = new CandleBar(Periods.toDuration(period),
                         ZonedDateTime.ofInstant(Instant.ofEpochMilli(candleStickDTO.getCloseTime()),
                                 ZoneId.of("UTC")),
                         candleStickDTO.getOpenPrice(), candleStickDTO.getHighPrice(),
                         candleStickDTO.getLowPrice(), candleStickDTO.getClosePrice(),
-                        candleStickDTO.getVolume(), candleStickDTO.getTrades()).toCandle());
+                        candleStickDTO.getVolume(), candleStickDTO.getTrades());
+                bar.setClosed(candleStickDTO.isClosed());
 
-                synchronized (this) {
-                    notify();
+                var candle = bar.toCandle();
+                if (candle.isClosed()) {
+                    temporaryCandle.set(candle);
+
+                    synchronized (this) {
+                        notify();
+                    }
                 }
             } catch (JsonProcessingException e) {
                 throw new RuntimeException(e);
@@ -66,10 +68,5 @@ public class BinanceCandleSource implements CandleSource<Candle> {
         temporaryCandle.set(null);
 
         return candle;
-    }
-
-    @Override
-    public void close() throws Exception {
-        client.closeAllConnections();
     }
 }

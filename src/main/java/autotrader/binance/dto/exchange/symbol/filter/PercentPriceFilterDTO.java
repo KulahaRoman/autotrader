@@ -3,12 +3,18 @@ package autotrader.binance.dto.exchange.symbol.filter;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class PercentPriceFilterDTO extends FilterDTO {
-    private final double multiplierUp;
-    private final double multiplierDown;
-    private final int averagePriceMinimums;
+    private double multiplierUp;
+    private double multiplierDown;
+    private int averagePriceMinimums;
+
+    public PercentPriceFilterDTO() {
+        super("PERCENT_PRICE");
+    }
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public PercentPriceFilterDTO(@JsonProperty("multiplierUp") double multiplierUp,

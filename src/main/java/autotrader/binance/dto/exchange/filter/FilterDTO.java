@@ -3,11 +3,13 @@ package autotrader.binance.dto.exchange.filter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@AllArgsConstructor
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property = "filterType")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = ExchangeMaxNumberAlgoOrdersFilterDTO.class, name = "EXCHANGE_MAX_NUM_ALGO_ORDERS"),
@@ -16,5 +18,5 @@ import lombok.RequiredArgsConstructor;
 })
 public abstract class FilterDTO {
     @JsonProperty("filterType")
-    private final String filterType;
+    private String filterType;
 }

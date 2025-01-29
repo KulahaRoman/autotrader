@@ -10,6 +10,10 @@ public class PercentPriceFilter extends Filter {
     private double multiplierDown;
     private int averagePriceMinimums;
 
+    public PercentPriceFilter() {
+        super(FilterType.PERCENT_PRICE);
+    }
+
     public PercentPriceFilter(double multiplierUp, double multiplierDown, int averagePriceMinimums) {
         super(FilterType.PERCENT_PRICE);
         this.multiplierUp = multiplierUp;

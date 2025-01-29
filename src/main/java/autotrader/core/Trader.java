@@ -1,7 +1,7 @@
 package autotrader.core;
 
 public interface Trader<C> {
-    void adviceToBuy(C candle);
+    void handleBuySignal(C candle);
 
-    void adviceToSell(C candle);
+    void handleSellSignal(C candle);
 }

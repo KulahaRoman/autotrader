@@ -3,12 +3,18 @@ package autotrader.binance.dto.exchange.symbol.filter;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class MarketLotSizeFilterDTO extends FilterDTO {
-    private final double minQuantity;
-    private final double maxQuantity;
-    private final double stepSize;
+    private double minQuantity;
+    private double maxQuantity;
+    private double stepSize;
+
+    public MarketLotSizeFilterDTO() {
+        super("MARKET_LOT_SIZE");
+    }
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public MarketLotSizeFilterDTO(@JsonProperty("minQty") double minQuantity,

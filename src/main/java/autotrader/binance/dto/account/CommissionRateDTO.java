@@ -1,18 +1,22 @@
 package autotrader.binance.dto.account;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CommissionRateDTO {
     @JsonProperty("maker")
-    private final double maker;
+    private double maker;
     @JsonProperty("taker")
-    private final double taker;
+    private double taker;
     @JsonProperty("buyer")
-    private final double buyer;
+    private double buyer;
     @JsonProperty("seller")
-    private final double seller;
+    private double seller;
 }

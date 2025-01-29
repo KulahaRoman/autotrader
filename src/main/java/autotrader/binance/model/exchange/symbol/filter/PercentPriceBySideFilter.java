@@ -12,6 +12,10 @@ public class PercentPriceBySideFilter extends Filter {
     private double askMultiplierDown;
     private int averagePriceMinimums;
 
+    public PercentPriceBySideFilter() {
+        super(FilterType.PERCENT_PRICE_BY_SIDE);
+    }
+
     public PercentPriceBySideFilter(double bidMultiplierUp, double bidMultiplierDown,
                                     double askMultiplierUp, double askMultiplierDown,
                                     int averagePriceMinimums) {

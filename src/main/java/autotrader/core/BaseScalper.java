@@ -30,6 +30,5 @@ public class BaseScalper<C> implements Scalper {
 
     @Override
     public void close() throws Exception {
-        candleSource.close();
     }
 }

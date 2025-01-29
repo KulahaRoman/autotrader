@@ -1,44 +1,48 @@
 package autotrader.binance.dto.candle;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CandleStickDTO {
     @JsonProperty("t")
-    private final long openTime;
+    private long openTime;
     @JsonProperty("T")
-    private final long closeTime;
+    private long closeTime;
     @JsonProperty("s")
-    private final String symbol;
+    private String symbol;
     @JsonProperty("i")
-    private final String interval;
+    private String interval;
     @JsonProperty("f")
-    private final long firstTradeID;
+    private long firstTradeID;
     @JsonProperty("L")
-    private final long lastTradeID;
+    private long lastTradeID;
     @JsonProperty("o")
-    private final double openPrice;
+    private double openPrice;
     @JsonProperty("c")
-    private final double closePrice;
+    private double closePrice;
     @JsonProperty("h")
-    private final double highPrice;
+    private double highPrice;
     @JsonProperty("l")
-    private final double lowPrice;
+    private double lowPrice;
     @JsonProperty("v")
-    private final double volume;
+    private double volume;
     @JsonProperty("n")
-    private final int trades;
+    private int trades;
     @JsonProperty("x")
-    private final boolean isClosed;
+    private boolean isClosed;
     @JsonProperty("q")
-    private final double quoteAssetVolume;
+    private double quoteAssetVolume;
     @JsonProperty("V")
-    private final double takerBaseAssetVolume;
+    private double takerBaseAssetVolume;
     @JsonProperty("Q")
-    private final double takerQuoteAssetVolume;
+    private double takerQuoteAssetVolume;
     @JsonProperty("B")
-    private final int ignore;
+    private int ignore;
 }

@@ -10,6 +10,10 @@ public class MinimalNotionalFilter extends Filter {
     private boolean applyToMarket;
     private int averagePriceMinimums;
 
+    public MinimalNotionalFilter() {
+        super(FilterType.MIN_NOTIONAL);
+    }
+
     public MinimalNotionalFilter(double minNotional, boolean applyToMarket, int averagePriceMinimums) {
         super(FilterType.MIN_NOTIONAL);
         this.minNotional = minNotional;

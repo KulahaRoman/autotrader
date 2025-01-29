@@ -1,4 +1,6 @@
-package autotrader.binance;
+package autotrader.binance.provider;
+
+import autotrader.binance.ScalperState;
 
 import java.util.Properties;
 

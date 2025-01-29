@@ -10,6 +10,10 @@ public class LotSizeFilter extends Filter {
     private double maxQuantity;
     private double stepSize;
 
+    public LotSizeFilter() {
+        super(FilterType.LOT_SIZE);
+    }
+
     public LotSizeFilter(double minQuantity, double maxQuantity, double stepSize) {
         super(FilterType.LOT_SIZE);
         this.minQuantity = minQuantity;
