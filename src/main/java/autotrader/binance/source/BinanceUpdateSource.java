@@ -10,16 +10,11 @@ import com.binance.connector.client.WebSocketStreamClient;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.json.JSONObject;
 
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class BinanceUpdateSource implements UpdateSource<Update> {
-    private final Lock lock = new ReentrantLock();
-    private final Condition condition = lock.newCondition();
-
-    private final AtomicReference<Update> temporaryUpdate = new AtomicReference<>();
+    private final BlockingQueue<Update> updates = new LinkedBlockingQueue<>();
 
     public BinanceUpdateSource(WebSocketStreamClient webSocketStreamClient, SpotClient spotClient) {
         JSONObject obj = new JSONObject(spotClient.createUserData().createListenKey());
@@ -28,17 +23,8 @@ public class BinanceUpdateSource implements UpdateSource<Update> {
         webSocketStreamClient.listenUserStream(listenKey, ((event) -> {
             try {
                 var updateDTO = JSON.readObject(event, UpdateDTO.class);
-                var update = UpdateMapper.toModel(updateDTO);
-
-                temporaryUpdate.set(update);
-
-                lock.lock();
-                try {
-                    condition.signalAll();
-                } finally {
-                    lock.unlock();
-                }
-            } catch (JsonProcessingException e) {
+                updates.put(UpdateMapper.toModel(updateDTO));
+            } catch (JsonProcessingException | InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }));
@@ -46,20 +32,10 @@ public class BinanceUpdateSource implements UpdateSource<Update> {
 
     @Override
     public Update nextUpdate() {
-        lock.lock();
         try {
-            while (temporaryUpdate.get() == null) {
-                condition.await();
-            }
+            return updates.take();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        } finally {
-            lock.unlock();
         }
-
-        var update = temporaryUpdate.get();
-        temporaryUpdate.set(null);
-
-        return update;
     }
 }

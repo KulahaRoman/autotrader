@@ -15,10 +15,11 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Properties;
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class BinanceCandleSource implements CandleSource<Candle> {
-    private final AtomicReference<Candle> temporaryCandle = new AtomicReference<>();
+    private final BlockingQueue<Candle> candles = new LinkedBlockingQueue<>();
 
     public BinanceCandleSource(WebSocketStreamClient client, Properties configuration) {
         var symbol = configuration.getProperty("symbol").toUpperCase();
@@ -46,13 +47,9 @@ public class BinanceCandleSource implements CandleSource<Candle> {
 
                 var candle = bar.toCandle();
                 if (candle.isClosed()) {
-                    temporaryCandle.set(candle);
-
-                    synchronized (this) {
-                        notify();
-                    }
+                    candles.put(candle);
                 }
-            } catch (JsonProcessingException e) {
+            } catch (JsonProcessingException | InterruptedException e) {
                 throw new RuntimeException(e);
             }
         };
@@ -62,19 +59,10 @@ public class BinanceCandleSource implements CandleSource<Candle> {
 
     @Override
     public Candle nextCandle() {
-        synchronized (this) {
-            try {
-                while (temporaryCandle.get() == null) {
-                    this.wait();
-                }
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+        try {
+            return candles.take();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
-
-        var candle = temporaryCandle.get();
-        temporaryCandle.set(null);
-
-        return candle;
     }
 }
