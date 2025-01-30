@@ -44,16 +44,19 @@ public class BinanceHistoryProvider implements HistoryProvider {
                     .map(values -> {
                         var bar = new CandleBar();
                         bar.setTimePeriod(Periods.toDuration(period));
-                        bar.setBeginTime(ZonedDateTime.ofInstant(Instant.ofEpochMilli((long) values.get(0)),
+                        bar.setBeginTime(ZonedDateTime.ofInstant(
+                                Instant.ofEpochMilli(((Number) values.get(0)).longValue()),
                                 ZoneId.of("UTC")));
-                        bar.setEndTime(ZonedDateTime.ofInstant(Instant.ofEpochMilli((long) values.get(6)),
+                        bar.setEndTime(ZonedDateTime.ofInstant(
+                                Instant.ofEpochMilli(((Number) values.get(6)).longValue()),
                                 ZoneId.of("UTC")));
                         bar.setOpenPrice(DecimalNum.valueOf((String) values.get(1)));
                         bar.setHighPrice(DecimalNum.valueOf((String) values.get(2)));
                         bar.setLowPrice(DecimalNum.valueOf((String) values.get(3)));
                         bar.setClosePrice(DecimalNum.valueOf((String) values.get(4)));
                         bar.setVolume(DecimalNum.valueOf((String) values.get(5)));
-                        bar.setTrades((long) values.get(8));
+                        bar.setAmount(DecimalNum.valueOf(0.0));
+                        bar.setTrades(((Number) values.get(8)).longValue());
                         bar.setClosed(true);
 
                         return bar.toCandle();

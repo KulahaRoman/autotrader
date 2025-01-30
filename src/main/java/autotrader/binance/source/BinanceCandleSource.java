@@ -40,6 +40,7 @@ public class BinanceCandleSource implements CandleSource<Candle> {
                 bar.setLowPrice(DecimalNum.valueOf(candleStickDTO.getLowPrice()));
                 bar.setClosePrice(DecimalNum.valueOf(candleStickDTO.getClosePrice()));
                 bar.setVolume(DecimalNum.valueOf(candleStickDTO.getVolume()));
+                bar.setAmount(DecimalNum.valueOf(0.0));
                 bar.setTrades(candleStickDTO.getTrades());
                 bar.setClosed(candleStickDTO.isClosed());
 

@@ -31,10 +31,12 @@ public class BinanceTrader implements DynamicTrader<Candle> {
 
         Thread.ofPlatform().start(() -> {
             while (true) {
-                if (updateSource.nextUpdate() instanceof OrderUpdate update) {
-                    log.trace("Order update received: {}", update.getType());
+                var update = updateSource.nextUpdate();
+                log.trace("update: {}", update);
+
+                if (update instanceof OrderUpdate orderUpdate) {
                     try {
-                        handleUpdate(update);
+                        handleUpdate(orderUpdate);
                     } catch (Exception e) {
                         log.error("Failed to handle order update", e);
                     }
@@ -154,7 +156,7 @@ public class BinanceTrader implements DynamicTrader<Candle> {
 
     private void handleUpdate(OrderUpdate update) {
         log.trace("handleUpdate update {}", update.getType());
-        
+
         if (traderState.getPhase() != null && traderState.getContext() != null) {
             var buyOrder = traderState.getContext().getBuyOrder();
             if (buyOrder != null && buyOrder.getOrderID() == update.getOrderID()) {
