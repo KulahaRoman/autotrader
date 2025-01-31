@@ -1,14 +1,11 @@
 package autotrader.binance;
 
 import autotrader.binance.handler.BinanceCandleHandler;
-import autotrader.binance.handler.BinanceGeneralUpdateHandler;
 import autotrader.binance.provider.*;
 import autotrader.binance.source.BinanceCandleSource;
-import autotrader.binance.source.BinanceGeneralUpdateSource;
-import autotrader.binance.source.BinanceOrderUpdateSource;
 import autotrader.binance.source.BinanceUpdateSource;
 import autotrader.binance.strategy.RiseFallStrategy;
-import autotrader.core.BaseUpdatableScalper;
+import autotrader.core.BaseScalper;
 import autotrader.core.Scalper;
 import autotrader.core.ScalperFactory;
 import com.binance.connector.client.impl.SpotClientImpl;
@@ -72,25 +69,16 @@ public class BinanceScalperFactory implements ScalperFactory {
         var traderState = traderStateProvider.getTraderState(properties);
         var scalperState = scalperStateProvider.getScalperState(properties);
 
-        // create candle source
+        // create sources
         var candleSource = new BinanceCandleSource(candlesStreamClient, properties);
-
-        // create update source
-        var accountUpdateSource = new BinanceUpdateSource(accountStreamClient, spotClient);
-        var orderUpdateSource = new BinanceUpdateSource(orderStreamClient, spotClient);
-
-        var generalUpdateSource = new BinanceGeneralUpdateSource(accountUpdateSource);
-        var tradesUpdateSource = new BinanceOrderUpdateSource(orderUpdateSource);
+        var updateSource = new BinanceUpdateSource(accountStreamClient, spotClient);
 
         // create candle handler
         var strategy = new RiseFallStrategy(historyProvider);
         var market = new BinanceMarket(spotClient);
-        var trader = new BinanceTrader(tradesUpdateSource, market, scalperState, traderState);
+        var trader = new BinanceTrader(updateSource, market, scalperState, traderState);
         var candleHandler = new BinanceCandleHandler(strategy, trader);
 
-        // create update handler
-        var updateHandler = new BinanceGeneralUpdateHandler(traderState);
-
-        return new BaseUpdatableScalper<>(candleSource, candleHandler, generalUpdateSource, updateHandler);
+        return new BaseScalper<>(candleSource, candleHandler);
     }
 }
